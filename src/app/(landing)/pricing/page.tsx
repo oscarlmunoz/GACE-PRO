@@ -1,7 +1,7 @@
-import { type Metadata } from "next";
-import { APP_NAME } from "@/config/config";
-import PricingPlans from "@/components/pricing/PricingPlans";
 import { CustomButton } from "@/components/CustomButton";
+import PricingPlans from "@/components/pricing/PricingPlans";
+import { APP_NAME } from "@/config/config";
+import { type Metadata } from "next";
 
 export const metadata: Metadata = {
   title: `Pricing - ${APP_NAME}`,

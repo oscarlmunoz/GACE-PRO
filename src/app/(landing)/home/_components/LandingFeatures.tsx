@@ -1,18 +1,9 @@
 "use client";
-import {
-  Rocket,
-  Shield,
-  Zap,
-  Users,
-  Globe,
-  BarChart,
-  ArrowRight,
-} from "lucide-react";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { APP_NAME } from "@/config/config";
-import { CardWithIcon } from "@/components/CardWithIcon";
 import { type GradientType } from "@/components/CardIcon";
+import { CardWithIcon } from "@/components/CardWithIcon";
+import { APP_NAME } from "@/config/config";
+import { motion } from "framer-motion";
+import { BarChart, Rocket, Zap } from "lucide-react";
 import LandingSectionTitle from "./LandingSectionTitle";
 
 export default function LandingFeatures() {
@@ -24,44 +15,44 @@ export default function LandingFeatures() {
   }[] = [
     {
       icon: Rocket,
-      title: "Lightning Fast",
+      title: "Acceso Rápido",
       description:
-        "Our platform is optimized for speed, ensuring you get results in milliseconds.",
+        "Sin esperas. Tu decides cuando resolver un caso práctico y obtener la corrección al instante.",
       gradient: "blue",
     },
-    {
-      icon: Shield,
-      title: "Secure By Design",
-      description:
-        "Enterprise-grade security with end-to-end encryption and regular audits.",
-      gradient: "green",
-    },
+    // {
+    //   icon: Shield,
+    //   title: "Secure By Design",
+    //   description:
+    //     "Enterprise-grade security with end-to-end encryption and regular audits.",
+    //   gradient: "green",
+    // },
     {
       icon: Zap,
-      title: "AI-Powered",
+      title: "Impulsado por IA",
       description:
-        "Cutting-edge artificial intelligence to automate and enhance your workflow.",
+        "Aproveche el poder de la IA para generar supuestos prácticos personalizados al instante.",
       gradient: "amber",
     },
-    {
-      icon: Users,
-      title: "Team Collaboration",
-      description:
-        "Seamless collaboration tools to help your team work together effectively from anywhere.",
-      gradient: "purple",
-    },
-    {
-      icon: Globe,
-      title: "Global Support",
-      description:
-        "24/7 support available worldwide in multiple languages to assist you whenever needed.",
-      gradient: "indigo",
-    },
+    // {
+    //   icon: Users,
+    //   title: "Team Collaboration",
+    //   description:
+    //     "Seamless collaboration tools to help your team work together effectively from anywhere.",
+    //   gradient: "purple",
+    // },
+    // {
+    //   icon: Globe,
+    //   title: "Global Support",
+    //   description:
+    //     "24/7 support available worldwide in multiple languages to assist you whenever needed.",
+    //   gradient: "indigo",
+    // },
     {
       icon: BarChart,
-      title: "Advanced Analytics",
+      title: "Seguimiento de Progreso",
       description:
-        "Comprehensive analytics dashboard with actionable insights to optimize your business.",
+        "Monitorea tu progreso con gráficos y estadísticas personalizadas.",
       gradient: "orange",
     },
   ];
@@ -85,8 +76,8 @@ export default function LandingFeatures() {
     <section className="w-full py-20">
       <div className="container mx-auto px-4">
         <LandingSectionTitle
-          title={`Why Choose ${APP_NAME}`}
-          description="Our platform combines powerful features with intuitive design to deliver an exceptional experience."
+          title={`Por que elegir ${APP_NAME}`}
+          description="Podrás generar supuestos prácticos personalizados al instante. Obtener recomendaciones para tu caso particular y llevar un seguimiento de tu progreso."
         />
 
         <motion.div

@@ -1,13 +1,12 @@
+import { clientEnv } from "@/env/client";
 import {
   LucideBookOpen,
   LucideCreditCard,
+  LucideHome,
   type LucideIcon,
   LucideInfo,
-  LucideHome,
-  LucideFileText,
   LucideMessageSquare,
 } from "lucide-react";
-import { clientEnv } from "@/env/client";
 
 export interface Link {
   label: string;
@@ -27,7 +26,7 @@ export const blogLink: Link | null = clientEnv.NEXT_PUBLIC_ENABLE_BLOG_PAGE
 export const pricingLink: Link | null =
   clientEnv.NEXT_PUBLIC_ENABLE_PRICING_PAGE
     ? {
-        label: "Pricing",
+        label: "Precios",
         href: "/pricing",
         icon: LucideCreditCard,
       }
@@ -35,7 +34,7 @@ export const pricingLink: Link | null =
 
 export const aboutLink: Link | null = clientEnv.NEXT_PUBLIC_ENABLE_ABOUT_PAGE
   ? {
-      label: "About",
+      label: "Sobre nosotros",
       href: "/about",
       icon: LucideInfo,
     }
